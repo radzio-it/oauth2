@@ -82,7 +82,7 @@ Credentials handleAccessTokenResponse(http.Response response, Uri tokenEndpoint,
       }
     }
 
-    for (var name in ['refresh_token', 'id_token', 'scope']) {
+    for (var name in ['refresh_token', 'id_token']) {
       var value = parameters[name];
       if (value != null && value is! String) {
         throw FormatException(
