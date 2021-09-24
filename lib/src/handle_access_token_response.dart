@@ -90,8 +90,8 @@ Credentials handleAccessTokenResponse(http.Response response, Uri tokenEndpoint,
       }
     }
 
-    var scope = parameters['scope'] as String?;
-    if (scope != null) scopes = scope.split(delimiter);
+    //var scope = parameters['scope'] as String?;
+    //if (scope != null) scopes = scope.split(delimiter);
 
     var expiration = expiresIn == null
         ? null
